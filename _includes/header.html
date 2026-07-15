@@ -1,13 +1,20 @@
 <header>
   <div class="topnav">
-    <a href='/'>
+    <a href="/">
       <picture>
-        <source media="(min-width: 360px)" srcset="./assets/images/logo.svg">
-        <img src="./assets/images/small_logo.svg" alt="David Jegou, praticien en Étiomédecine" width="285"
-          height="74" />
+        <source
+          media="(min-width: 360px)"
+          srcset="./assets/images/moebius-transparent.svg"
+        />
+        <img
+          src="./assets/images/moebius-transparent.svg"
+          alt="anneau de moebius"
+          width="auto"
+          height="75"
+        />
       </picture>
-
     </a>
+    <p>Etiomédecine en Bretagne</p>
     <nav>
       {% for link in site.data.navigation %}
       <a href="{{ link.url }}" title="{{ link.name }}">{{ link.name }}</a>
@@ -19,7 +26,7 @@
       <span class="line line3" id="line3"></span>
     </div>
   </div>
-  <div class='sandwitch-menu' id="myLinks">
+  <div class="sandwich-menu" id="myLinks">
     {% for link in site.data.navigation %}
     <a href="{{ link.url }}" title="{{ link.name }}">{{ link.name }}</a>
     {% endfor %}

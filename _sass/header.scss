@@ -1,14 +1,16 @@
 header {
-  background-color: black;
+  background-color: #ecf4f8;
 
   .topnav {
     margin: auto;
-    max-width: 1536px;
+    max-width: 1152px;
     width: 100%;
     padding: 8px 8px;
+    gap: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #1f4256;
 
     nav {
       display: none;
@@ -16,12 +18,12 @@ header {
 
       @media only screen and (min-width: 834px) {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 64px;
       }
 
       a {
-        color: white;
+        color: #1f4256;
       }
     }
   }
@@ -42,7 +44,7 @@ header {
       height: 4px;
       width: 100%;
       border-radius: 10px;
-      background-color: white;
+      background-color: #070e13;
     }
 
     .line1 {
@@ -60,17 +62,16 @@ header {
     }
   }
 
-  .sandwitch-menu {
+  .sandwich-menu {
     display: none;
     padding: 32px 0px;
-    //   background-color: white;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 32px;
 
     a {
-      color: white;
+      color: #070e13;
     }
 
     @media only screen and (min-width: 834px) {

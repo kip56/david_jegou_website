@@ -1,0 +1,28 @@
+# Jekyll generated site and caches
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+
+# Bundler / Ruby dependencies installed locally
+.bundle/
+vendor/
+
+# Ruby build artifacts
+*.gem
+
+# Logs
+*.log
+
+# Environment/local config
+.env
+.env.*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Windows alternate data stream files sometimes copied from downloads
+*:Zone.Identifier

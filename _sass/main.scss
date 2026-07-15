@@ -1,24 +1,26 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf");
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
   font-family: "MontserratSemiBold";
   src: url("../fonts/Montserrat-SemiBold.ttf");
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
   font-family: "MontserratItalic";
   src: url("../fonts/Montserrat-Italic.ttf");
-  font-display: swap
+  font-display: swap;
 }
 
-$primary-color: #0074AD;
+$primary-color: #2f6482;
 $font-color: #000000;
-$website-background: #FFFFFF;
+// $font-color: #070e13;
+// $website-background: #ffffff;
+$website-background: #ecf4f8;
 
 // Reset styles
 * {
@@ -89,7 +91,6 @@ body {
 }
 
 .hero {
-
   .container {
     display: flex;
     justify-content: center;
@@ -118,12 +119,13 @@ body {
     color: white;
     padding: 16px 64px;
     border-radius: 15px;
-    background: var(--primary-color, #0074AD);
+    // background: $primary-color;
+    background: #132834;
   }
 }
 
 #etiomedecine img {
-  max-width: 1140px;
+  // max-width: 1140px;
   width: 100%;
   min-width: 304px;
   aspect-ratio: 1140/500;
@@ -139,7 +141,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   /* 150% */
-  max-width: 1152px;
+  max-width: 1100px;
 }
 
 .flex-row {
@@ -162,9 +164,8 @@ body {
   }
 
   .diploma {
-    text-align: center
+    text-align: center;
   }
-
 }
 
 #infos {

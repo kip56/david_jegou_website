@@ -1,11 +1,11 @@
 header {
-  background-color: #070e13;
+  background-color: $dark-background;
 
   .topnav {
     margin: auto;
     max-width: 1152px;
     width: 100%;
-    padding: 8px 8px;
+    padding: 12px 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,14 +1,43 @@
 header {
-  background-color: black;
+  background-color: #070e13;
 
   .topnav {
     margin: auto;
-    max-width: 1536px;
+    max-width: 1152px;
     width: 100%;
     padding: 8px 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      text-align: left;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: block;
+      flex: 0 0 auto;
+      width: 84px;
+      height: 56px;
+      object-fit: contain;
+    }
+
+    .brand-title {
+      display: flex;
+      flex-direction: column;
+      font-family: "MontserratSemiBold";
+      font-size: 1.25rem;
+      line-height: 1.1;
+
+      @media only screen and (min-width: 834px) {
+        font-size: 1.4rem;
+      }
+    }
 
     nav {
       display: none;
@@ -16,7 +45,9 @@ header {
 
       @media only screen and (min-width: 834px) {
         display: flex;
-        justify-content: center;
+        width: auto;
+        margin-left: auto;
+        justify-content: flex-end;
         gap: 64px;
       }
 

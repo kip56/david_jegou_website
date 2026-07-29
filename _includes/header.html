@@ -1,12 +1,11 @@
 <header>
   <div class="topnav">
-    <a href='/'>
-      <picture>
-        <source media="(min-width: 360px)" srcset="./assets/images/logo.svg">
-        <img src="./assets/images/small_logo.svg" alt="David Jegou, praticien en Étiomédecine" width="285"
-          height="74" />
-      </picture>
-
+    <a class="brand" href="/" aria-label="Accueil — Étiomédecine Bretagne">
+      <img class="brand-mark" src="./assets/images/moebius-ribbon.webp" alt="" width="84" height="56" />
+      <span class="brand-title">
+        <span>Étiomédecine</span>
+        <span>Bretagne</span>
+      </span>
     </a>
     <nav>
       {% for link in site.data.navigation %}

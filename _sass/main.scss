@@ -142,25 +142,19 @@ body {
   max-width: 1152px;
 }
 
-.flex-row {
+.prose {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 64px;
+  flex-direction: column;
+  gap: 1.5rem;
+  line-height: 1.7;
 }
 
-.beginning {
-  max-width: 787.81px;
+.text-link {
+  color: $primary-color;
+  text-decoration: underline;
 }
 
 #parcours {
-  .flex-row {
-    @media only screen and (max-width: 743px) {
-      justify-content: center;
-      flex-wrap: wrap-reverse;
-    }
-  }
-
   .diploma {
     text-align: center
   }

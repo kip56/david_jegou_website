@@ -9,15 +9,15 @@ layout: default
 1. Identification de l'éditeur et de l’hébergeur du site
 <div class="markdown-separator-m"></div>
 - Le site etiomedecine-bretagne.fr est édité par David Jegou. 
-- Numéro de téléphone : 07 81 32 23 99
-- Adresse e-mail : davidjegou.etio@gmail.com
+- Numéro de téléphone&#8239;: 07 81 32 23 99
+- Adresse e-mail&#8239;: davidjegou.etio@gmail.com
 - Le directeur de la publication est David Jegou.
 - Le site est hébergé sur Github Pages, dont le siège social est situé à San Francisco, États-Unis.
 <div class="markdown-separator-l"></div>
 2. Activité
 <div class="markdown-separator-m"></div>
 - David Jegou est un ostéopathe agréé, inscrit sur le répertoire ADELI au numéro 56000861.
-- Numéro de SIRET : 50924126100064.
+- Numéro de SIRET&#8239;: 50924126100064.
 <div class="markdown-separator-l"></div>
 3. Propriété intellectuelle
 <div class="markdown-separator-m"></div>

@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: David Jegou | Étiomédecine
+title: David Jegou | Étiomédecine en Bretagne
 description: >- # this means to ignore newlines until "baseurl:"
   David Jegou est praticien en étiomédecine. Il reçoit dans son cabinet à Orvault, près de Nantes,
-  ou dans son cabinet à Belz, près d'Auray.
+  ou dans son cabinet à Crac'h, près d'Auray.
 url: https://etiomedecine-bretagne.fr
-logo: ./assets/images/logo.webp
+logo: ./assets/images/moebius-ribbon.webp
 
 # Build settings
 plugins:

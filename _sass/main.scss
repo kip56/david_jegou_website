@@ -150,6 +150,33 @@ body {
   line-height: 1.7;
 }
 
+.legal-page {
+  width: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 64px 40px;
+  line-height: 1.6;
+
+  h1 {
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    margin: 40px 0 16px;
+    font-family: "MontserratSemiBold";
+    font-size: 18px;
+    text-align: left;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 48px 24px;
+
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
 .text-link {
   color: $primary-color;
   text-decoration: underline;

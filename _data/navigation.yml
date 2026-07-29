@@ -1,6 +1,6 @@
 - name: L'Étiomédecine
-  url: '#etiomedecine'
+  url: '/#etiomedecine'
 - name: "Qui suis-je&#8239;?"
-  url: '#parcours'
+  url: '/#parcours'
 - name: Infos pratiques
-  url: '#infos'
+  url: '/#infos'

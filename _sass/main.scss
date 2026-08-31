@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf");
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
   font-family: "MontserratSemiBold";
   src: url("../fonts/Montserrat-SemiBold.ttf");
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
   font-family: "MontserratItalic";
   src: url("../fonts/Montserrat-Italic.ttf");
-  font-display: swap
+  font-display: swap;
 }
 
-$primary-color: #0074AD;
+$primary-color: #0074ad;
 $font-color: #000000;
-$website-background: #FFFFFF;
+$website-background: #ffffff;
 $dark-background: #070e13;
 
 // Reset styles
@@ -90,44 +90,151 @@ body {
 }
 
 .hero {
-
   .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 500px));
     justify-content: center;
-    align-items: center;
-    gap: 64px;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    gap: clamp(32px, 6vw, 64px);
+
+    @media only screen and (max-width: 900px) {
+      grid-template-columns: minmax(0, 500px);
+    }
 
     .cabinet {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 32px;
-      gap: 32px;
+      width: 100%;
+      gap: 24px;
+
+      .hero-address {
+        max-width: none;
+        font-size: 20px;
+        line-height: 28px;
+
+        @media only screen and (min-width: 901px) {
+          white-space: nowrap;
+        }
+      }
+
+      picture {
+        display: block;
+        width: min(100%, 500px);
+        min-width: min(304px, 100%);
+        aspect-ratio: 500 / 334;
+        overflow: hidden;
+        border: 1px solid rgba(0, 116, 173, 0.22);
+        border-radius: 32px;
+
+        @media only screen and (max-width: 768px) {
+          width: 100vw;
+          min-width: 100vw;
+          margin-right: calc(50% - 50vw);
+          margin-left: calc(50% - 50vw);
+          border: 0;
+          border-radius: 0;
+        }
+      }
 
       img {
-        min-width: 304px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 
         @media only screen and (max-width: 418px) {
           width: 100%;
         }
       }
+
+      .nantes-photo {
+        @media only screen and (max-width: 768px) {
+          transform: scale(1.08);
+        }
+      }
     }
+
+    .mobile-separated {
+      @media only screen and (max-width: 900px) {
+        padding-top: 40px;
+        border-top: 1px solid rgba(0, 116, 173, 0.22);
+      }
+    }
+  }
+
+  .nearby-cabinet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 560px);
+    margin: -16px auto 0;
+    padding-top: 32px;
+    gap: 16px;
+    border-top: 1px solid rgba(0, 116, 173, 0.22);
+    text-align: center;
+    line-height: 24px;
   }
 
   .phone {
     color: white;
     padding: 16px 64px;
     border-radius: 15px;
-    background: var(--primary-color, #0074AD);
+    background: var(--primary-color, #0074ad);
+  }
+}
+
+.presence-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.presence-label {
+  color: $primary-color;
+  font-family: "MontserratSemiBold";
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.presence-days {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 360px;
+  list-style: none;
+
+  li {
+    padding: 8px 12px;
+    border: 1px solid rgba(0, 116, 173, 0.28);
+    border-radius: 999px;
+    background-color: rgba(0, 116, 173, 0.08);
+    color: $dark-background;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
 #etiomedecine img {
+  display: block;
   max-width: 1140px;
   width: 100%;
   min-width: 304px;
-  aspect-ratio: 1140/500;
+  height: auto;
+  border-radius: 32px;
+
+  @media only screen and (max-width: 768px) {
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    border-radius: 0;
+  }
 }
 
 .title {
@@ -184,9 +291,8 @@ body {
 
 #parcours {
   .diploma {
-    text-align: center
+    text-align: center;
   }
-
 }
 
 #infos {
@@ -200,7 +306,18 @@ body {
     .address {
       display: flex;
       flex-direction: column;
-      gap: 32px;
+      gap: 24px;
+      align-items: center;
+      max-width: 400px;
+
+      .address-details {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        line-height: 24px;
+        text-align: center;
+      }
 
       iframe {
         border-radius: 16px;
@@ -216,10 +333,10 @@ body {
     text-align: center;
 
     .phone {
-      color: black;
+      color: white;
       padding: 16px 64px;
       border-radius: 15px;
-      border: 1px solid black;
+      background: var(--primary-color, #0074AD);
     }
   }
 }

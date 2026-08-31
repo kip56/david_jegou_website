@@ -1,11 +1,20 @@
 <header>
   <div class="topnav">
-    <a class="brand" href="/" aria-label="Accueil — David Jegou, Étiomédecine Bretagne">
-      <img class="brand-mark" src="./assets/images/moebius-ribbon.webp" alt="" width="84" height="56" />
+    <a
+      class="brand"
+      href="/"
+      aria-label="Accueil — David Jegou, Étiomédecine Bretagne"
+    >
+      <img
+        class="brand-mark"
+        src="./assets/images/moebius-ribbon.webp"
+        alt=""
+        width="84"
+        height="56"
+      />
       <span class="brand-title">
         <span>Étiomédecine</span>
         <span>Bretagne</span>
-        <span class="brand-practitioner">David Jegou</span>
       </span>
     </a>
     <nav>
@@ -19,7 +28,7 @@
       <span class="line line3" id="line3"></span>
     </div>
   </div>
-  <div class='sandwitch-menu' id="myLinks">
+  <div class="sandwitch-menu" id="myLinks">
     {% for link in site.data.navigation %}
     <a href="{{ link.url }}" title="{{ link.name }}">{{ link.name }}</a>
     {% endfor %}

@@ -148,12 +148,6 @@ body {
           width: 100%;
         }
       }
-
-      .nantes-photo {
-        @media only screen and (max-width: 768px) {
-          transform: scale(1.08);
-        }
-      }
     }
 
     .mobile-separated {
@@ -190,14 +184,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 12px;
-}
-
-.presence-label {
-  color: $primary-color;
-  font-family: "MontserratSemiBold";
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 .presence-days {
@@ -336,7 +322,7 @@ body {
       color: white;
       padding: 16px 64px;
       border-radius: 15px;
-      background: var(--primary-color, #0074AD);
+      background: var(--primary-color, #0074ad);
     }
   }
 }

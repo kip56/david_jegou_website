@@ -21,10 +21,10 @@
 title: David Jegou | Étiomédecine en Bretagne
 description: >- # this means to ignore newlines until "baseurl:"
   David Jegou est praticien en étiomédecine. Il reçoit dans ses cabinets à Orvault,
-  Crac'h et Ploëmel.
+  Crac'h et Ploemel.
 url: https://etiomedecine-bretagne.fr
 production_url: https://etiomedecine-bretagne.fr
-logo: ./assets/images/moebius-ribbon.webp
+logo: ./assets/images/moebius_transparent.png
 
 # Build settings
 plugins:

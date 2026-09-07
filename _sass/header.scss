@@ -111,6 +111,29 @@ header {
       display: none !important;
     }
   }
+
+  .topnav nav a[href="/#prendre-rdv"],
+  .sandwitch-menu a[href="/#prendre-rdv"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 11px 18px;
+    border-radius: 999px;
+    background: $white;
+    color: $primary-dark;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $white;
+      outline-offset: 4px;
+    }
+  }
 }
 
 @media only screen and (max-width: 520px) {

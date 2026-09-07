@@ -1,3 +1,4 @@
+// Fonts
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf");
@@ -10,12 +11,7 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "MontserratItalic";
-  src: url("../fonts/Montserrat-Italic.ttf");
-  font-display: swap;
-}
-
+// Theme
 $primary-color: #006b8a;
 $primary-dark: #00465f;
 $primary-soft: #e6f4f8;
@@ -27,6 +23,7 @@ $white: #ffffff;
 $line-color: rgba(0, 107, 138, 0.22);
 $shadow-soft: 0 22px 50px rgba(0, 107, 138, 0.13);
 
+// Base and typography
 * {
   margin: 0;
   padding: 0;
@@ -96,15 +93,12 @@ h2 {
   font-family: "MontserratSemiBold", sans-serif;
 }
 
-.italic {
-  font-style: italic;
-}
-
 .title {
   color: $primary-color;
   text-align: center;
 }
 
+// Hero
 .hero-pulse {
   position: relative;
   display: flex;
@@ -162,19 +156,11 @@ h2 {
   }
 }
 
-.hero-kicker {
-  display: inline-flex;
-  align-items: center;
-  min-height: 38px;
-  padding: 7px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.46);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.16);
-  backdrop-filter: blur(8px);
-  font-family: "MontserratSemiBold", sans-serif;
-  font-size: 0.9rem;
+.hero-appointment {
+  display: none;
 }
 
+// Sections and shared layout
 .content-section {
   padding: clamp(64px, 8vw, 104px) 24px;
   background-color: $warm-background;
@@ -183,10 +169,6 @@ h2 {
 .section-inner {
   width: min(100%, 1040px);
   margin: 0 auto;
-}
-
-.section-inner-narrow {
-  max-width: 780px;
 }
 
 .section-heading {
@@ -242,13 +224,13 @@ h2 {
   }
 }
 
+// Therapists
 .therapist-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 30px;
 }
 
-#etiomedecine .section-inner,
 #therapeutes .section-inner,
 #cabinets .section-inner {
   max-width: 1280px;
@@ -286,14 +268,28 @@ h2 {
   display: grid;
   grid-template-columns: minmax(260px, 44%) minmax(0, 1fr);
   min-height: 390px;
+}
+
+.therapist-photo {
+  position: relative;
+  overflow: hidden;
+  min-height: 390px;
 
   > img {
+    position: absolute;
+    inset: 0;
     display: block;
     width: 100%;
     height: 100%;
-    min-height: 390px;
     object-fit: cover;
+    object-position: center top;
   }
+}
+
+// Raise David's eye line to Sarah's while keeping the source photo intact.
+.therapist-photo--david > img {
+  transform: scale(1.1);
+  transform-origin: center bottom;
 }
 
 .therapist-content {
@@ -386,6 +382,7 @@ h2 {
   }
 }
 
+// Cabinets
 .cabinets-section {
   padding-bottom: clamp(80px, 9vw, 120px);
 }
@@ -403,7 +400,9 @@ h2 {
   > img {
     display: block;
     width: 100%;
+    height: auto;
     aspect-ratio: 4 / 3;
+    flex-shrink: 0;
     object-fit: cover;
   }
 
@@ -459,6 +458,7 @@ h2 {
   }
 }
 
+// Appointments
 .appointment-section {
   padding-top: clamp(56px, 7vw, 88px);
 }
@@ -506,6 +506,7 @@ h2 {
   }
 }
 
+// Therapist dialogs
 .modal-backdrop {
   position: fixed;
   inset: 0;
@@ -602,6 +603,7 @@ h2 {
   line-height: 1;
 }
 
+// Legal page
 .legal-page {
   width: min(100%, 900px);
   margin: 0 auto;
@@ -622,18 +624,7 @@ h2 {
   }
 }
 
-.markdown-separator-xl {
-  margin: 64px 0;
-}
-
-.markdown-separator-l {
-  margin: 32px 0;
-}
-
-.markdown-separator-m {
-  margin: 16px 0;
-}
-
+// Responsive overrides
 @media only screen and (max-width: 980px) {
   .therapist-grid,
   .cabinet-grid {
@@ -644,17 +635,39 @@ h2 {
     grid-template-columns: minmax(240px, 42%) minmax(0, 1fr);
     min-height: 360px;
 
-    > img {
+    .therapist-photo {
       min-height: 360px;
     }
   }
 
-  .therapist-card .therapist-meta {
-    grid-template-columns: 1fr;
-  }
-
   .cabinet-grid {
     gap: 28px;
+  }
+}
+
+@media only screen and (max-width: 833px) {
+  .hero-appointment {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    margin-top: 24px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: $white;
+    color: $primary-dark;
+    font-family: "MontserratSemiBold", sans-serif;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $white;
+      outline-offset: 4px;
+    }
   }
 }
 
@@ -690,7 +703,7 @@ h2 {
   .therapist-card {
     grid-template-columns: 1fr;
 
-    > img {
+    .therapist-photo {
       width: 100%;
       min-height: 0;
       aspect-ratio: 4 / 5;
@@ -707,7 +720,6 @@ h2 {
   }
 
   .week-days {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 4px;
 
     li {
@@ -715,6 +727,10 @@ h2 {
       padding: 0 2px;
       font-size: 0.68rem;
     }
+  }
+
+  .cabinet-grid {
+    gap: 48px;
   }
 
   .cabinet-card iframe {

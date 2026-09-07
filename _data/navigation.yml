@@ -1,8 +1,8 @@
 - name: L'Étiomédecine
-  url: '/#etiomedecine'
+  url: "/#etiomedecine"
 - name: Thérapeutes
-  url: '/#therapeutes'
+  url: "/#therapeutes"
 - name: Cabinets
-  url: '/#cabinets'
+  url: "/#cabinets"
 - name: Prendre RDV
-  url: '/#prendre-rdv'
+  url: "/#prendre-rdv"

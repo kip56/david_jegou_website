@@ -63,15 +63,33 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 32px;
-    height: 25px;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    padding: 10px 6px;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
     cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid $white;
+      outline-offset: 4px;
+    }
+
+    &[aria-expanded="true"] {
+      .line1 { transform: rotate(45deg); }
+      .line2 { transform: scaleY(0); }
+      .line3 { transform: rotate(-45deg); }
+    }
 
     @media only screen and (min-width: 834px) {
       display: none;
     }
 
     .line {
+      display: block;
+      flex-shrink: 0;
       width: 100%;
       height: 3px;
       border-radius: 999px;
@@ -94,7 +112,7 @@ header {
   }
 
   .sandwitch-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -102,13 +120,17 @@ header {
     padding: 18px 24px 28px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 
+    &[hidden] {
+      display: none;
+    }
+
     a {
       color: $white;
       text-decoration: none;
     }
 
     @media only screen and (min-width: 834px) {
-      display: none !important;
+      display: none;
     }
   }
 
@@ -148,5 +170,11 @@ header {
     .brand-title {
       font-size: 0.98rem;
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  header .hamburger-lines .line {
+    transition: none;
   }
 }

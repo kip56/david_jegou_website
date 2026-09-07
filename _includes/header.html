@@ -19,20 +19,26 @@
         <span>Bretagne</span>
       </span>
     </a>
-    <nav>
+    <nav aria-label="Navigation principale">
       {% for link in site.data.navigation %}
       <a href="{{ link.url }}" title="{{ link.name }}">{{ link.name }}</a>
       {% endfor %}
     </nav>
-    <div class="hamburger-lines" onclick="toggleMenu()">
-      <span class="line line1" id="line1"></span>
-      <span class="line line2" id="line2"></span>
-      <span class="line line3" id="line3"></span>
-    </div>
+    <button
+      class="hamburger-lines"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+      aria-controls="myLinks"
+    >
+      <span class="line line1" aria-hidden="true"></span>
+      <span class="line line2" aria-hidden="true"></span>
+      <span class="line line3" aria-hidden="true"></span>
+    </button>
   </div>
-  <div class="sandwitch-menu" id="myLinks">
+  <nav class="sandwitch-menu" id="myLinks" aria-label="Navigation principale" hidden>
     {% for link in site.data.navigation %}
     <a href="{{ link.url }}" title="{{ link.name }}">{{ link.name }}</a>
     {% endfor %}
-  </div>
+  </nav>
 </header>

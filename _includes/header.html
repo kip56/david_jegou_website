@@ -7,7 +7,9 @@
     >
       <img
         class="brand-mark"
-        src="./assets/images/moebius-ribbon.webp"
+        src="./assets/images/optimized/moebius-192.webp"
+        srcset="./assets/images/optimized/moebius-96.webp 96w, ./assets/images/optimized/moebius-192.webp 192w, ./assets/images/optimized/moebius-288.webp 288w"
+        sizes="(max-width: 520px) 62px, 76px"
         alt=""
         width="84"
         height="56"
@@ -17,20 +19,26 @@
         <span>Bretagne</span>
       </span>
     </a>
-    <nav>
+    <nav aria-label="Navigation principale">
       {% for link in site.data.navigation %}
       <a href="{{ link.url }}" title="{{ link.name }}">{{ link.name }}</a>
       {% endfor %}
     </nav>
-    <div class="hamburger-lines" onclick="toggleMenu()">
-      <span class="line line1" id="line1"></span>
-      <span class="line line2" id="line2"></span>
-      <span class="line line3" id="line3"></span>
-    </div>
+    <button
+      class="hamburger-lines"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+      aria-controls="myLinks"
+    >
+      <span class="line line1" aria-hidden="true"></span>
+      <span class="line line2" aria-hidden="true"></span>
+      <span class="line line3" aria-hidden="true"></span>
+    </button>
   </div>
-  <div class="sandwitch-menu" id="myLinks">
+  <nav class="sandwitch-menu" id="myLinks" aria-label="Navigation principale" hidden>
     {% for link in site.data.navigation %}
     <a href="{{ link.url }}" title="{{ link.name }}">{{ link.name }}</a>
     {% endfor %}
-  </div>
+  </nav>
 </header>

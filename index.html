@@ -1,249 +1,502 @@
 ---
-title: David Jegou | Étiomédecine en Bretagne
+title: Étiomédecine en Bretagne | David Jegou & Sarah Ziane
 layout: default
 ---
 
 <main>
-<section class="hero">
-  <div class="container">
-    <div class="cabinet">
-      <h1 class="semi-bold">À Nantes</h1>
-       <picture>
-        <source media="(min-width: 516px)" srcset="./assets/images/big-nantes.webp" width="500"
-          height="334">
-        <img class="nantes-photo" src="./assets/images/nantes.webp" alt="cabinet d'Étiomédecine de David Jegou à Nantes" width="302"
-          height="201">
-        </picture>
-      <h2 class="hero-address">6 Rue des Ajoncs d'Or, 44700 Orvault</h2>
-      <div class="presence-block" aria-label="Jours de présence à Nantes / Orvault">
-        <p class="presence-label">Présence</p>
-        <ul class="presence-days">
-          <li>Mercredi</li>
-          <li>Jeudi</li>
-          <li>Samedi</li>
-        </ul>
+  <section class="hero-pulse" aria-label="Accueil">
+    <picture>
+      <img
+        src="./assets/images/optimized/pouls-1120.webp"
+        srcset="./assets/images/optimized/pouls-720.webp 720w, ./assets/images/optimized/pouls-1120.webp 1120w, ./assets/images/optimized/pouls-1600.webp 1600w, ./assets/images/optimized/pouls-2200.webp 2200w"
+        sizes="(max-width: 700px) 710px, (max-width: 1120px) 1120px, 100vw"
+        width="2200"
+        height="1336"
+        fetchpriority="high"
+        alt="Prise de pouls pendant une séance d'étiomédecine"
+      />
+    </picture>
+    <div class="hero-content">
+      <h1 class="semi-bold">David Jegou & Sarah Ziane</h1>
+      <p>Un accompagnement de l'être dans sa singularité</p>
+      <a class="hero-appointment" href="#prendre-rdv">Prendre RDV</a>
+    </div>
+  </section>
+
+  <section id="etiomedecine" class="content-section">
+    <div class="section-inner">
+      <h1 class="title semi-bold">
+        L’étiomédecine, qu’est-ce que c’est&#8239;?
+      </h1>
+      <div class="text-body prose">
+        <p>
+          L’étiomédecine est une méthode thérapeutique visant à soulager les
+          <strong>mémoires de souffrance</strong>, innées ou acquises, à travers
+          lesquelles les individus appréhendent la vie. Ces mémoires agissent
+          comme des <strong>filtres</strong> qui distordent notre regard sur
+          l’existence. Le soin contribue à
+          «&#8239;<strong>décloisonner</strong>&#8239;» le patient, qui retrouve
+          alors davantage de <strong>liberté</strong> pour aborder la vie avec
+          plus de justesse et, potentiellement, se trouver.
+        </p>
+        <p>
+          Le soin en étiomédecine ne repose ni sur un protocole standardisé ni
+          sur des conseils. Il consiste à accueillir, sans jugement, le vécu
+          <strong>singulier</strong> de chaque patient. Le praticien
+          l'accompagne à recontacter les ressentis physiques et émotionnels liés
+          à son histoire afin de libérer les mémoires concernées, en s'appuyant
+          notamment sur les réactions du pouls.
+        </p>
+        <p>
+          C'est le <strong>partage</strong> du ressenti, rendu possible par la
+          présence empathique du thérapeute, qui permet la libération de la
+          charge de souffrance. Les symptômes, physiques comme psychiques, ainsi
+          que les fonctionnements qui en découlent, peuvent alors
+          progressivement se <strong>dissiper</strong>. La souffrance ne se
+          résout pas par l'explication, mais par le partage du ressenti.
+        </p>
+        <p>Nous sentir reconnus nous libère profondément et durablement.</p>
+        <p>
+          Pour en savoir plus sur l’étio, son
+          <strong>fonctionnement</strong> ou son
+          <strong>champ d’action</strong>, voir
+          <a
+            class="text-link"
+            href="https://www.etiomed.com/2026/06/10/letiomedecine-definition-champs-dapplication-et-limites/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >cet article.</a
+          >
+        </p>
       </div>
     </div>
-    <div class="cabinet mobile-separated">
-      <h1 class="semi-bold">À Crac'h</h1>
-      <picture>
-        <source media="(min-width: 516px)" srcset="./assets/images/crach.jpeg" width="500"
-          height="334">
-          <img src="./assets/images/crach.jpeg" alt="Salle de consultation de David Jegou à Crac'h" width="302" height="201">
-        </picture>
-      <h2 class="hero-address">1 rue Germaine Tillion, 56950 Crac'h</h2>
-      <div class="presence-block" aria-label="Jours de présence à Crac'h">
-        <p class="presence-label">Présence</p>
-        <ul class="presence-days">
-          <li>Lundi</li>
-          <li>Mardi</li>
-          <li>Mercredi</li>
-        </ul>
+  </section>
+
+  {% include moebius.html %}
+
+  <section id="therapeutes" class="content-section">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h1 class="title semi-bold">Les thérapeutes</h1>
+      </div>
+
+      <div class="therapist-grid">
+        <article class="therapist-card">
+          <div class="therapist-photo therapist-photo--david">
+            <img
+              src="./assets/images/optimized/david-800.webp"
+              srcset="./assets/images/optimized/david-400.webp 400w, ./assets/images/optimized/david-800.webp 800w, ./assets/images/optimized/david-1122.webp 1122w"
+              sizes="(max-width: 700px) calc(100vw - 36px), (max-width: 980px) 42vw, 480px"
+              loading="lazy"
+              decoding="async"
+              alt="Portrait de David Jegou, praticien en étiomédecine"
+              width="1122"
+              height="1402"
+            />
+          </div>
+          <div class="therapist-content">
+            <p class="eyebrow">Praticien certifié et formateur</p>
+            <h2 class="semi-bold">David Jegou</h2>
+            <p>
+              Ostéopathe de formation, je découvre l’étiomédecine après avoir
+              cherché une approche plus sensible de l’être humain. Formé dès
+              2009 auprès de Max Bernardeau, j’en fais aujourd’hui l’unique
+              outil de ma pratique...
+            </p>
+            <dl class="therapist-meta">
+              <div>
+                <dt>Téléphone</dt>
+                <dd><a href="tel:+33781322399">07 81 32 23 99</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd>
+                  <a href="mailto:davidjegou.etio@gmail.com"
+                    >davidjegou.etio@gmail.com</a
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>Tarif</dt>
+                <dd>75&#8239;€</dd>
+              </div>
+            </dl>
+            <button
+              type="button"
+              class="more-button"
+              data-modal-target="modal-david"
+            >
+              En savoir plus
+            </button>
+          </div>
+        </article>
+
+        <article class="therapist-card">
+          <div class="therapist-photo">
+            <img
+              src="./assets/images/optimized/sarah-756.webp"
+              srcset="./assets/images/optimized/sarah-400.webp 400w, ./assets/images/optimized/sarah-756.webp 756w"
+              sizes="(max-width: 700px) calc(100vw - 36px), (max-width: 980px) 42vw, 480px"
+              loading="lazy"
+              decoding="async"
+              alt="Portrait de Sarah Ziane, praticienne en étiomédecine"
+              width="756"
+              height="880"
+            />
+          </div>
+          <div class="therapist-content">
+            <p class="eyebrow">Praticienne certifiée</p>
+            <h2 class="semi-bold">Sarah Ziane</h2>
+            <p>
+              J’ai découvert l’étiomédecine en tant que patiente. Les bénéfices
+              vécus, alliés à ma curiosité pour l’humain, ont éveillé en moi
+              l’élan de me former puis de me consacrer pleinement à
+              l’accompagnement thérapeutique...
+            </p>
+            <dl class="therapist-meta">
+              <div>
+                <dt>Téléphone</dt>
+                <dd><a href="tel:+33781622199">07 81 62 21 99</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd>
+                  <a href="mailto:sarah.ziane.etio@gmail.com"
+                    >sarah.ziane.etio@gmail.com</a
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>Tarif</dt>
+                <dd>65&#8239;€</dd>
+              </div>
+            </dl>
+            <button
+              type="button"
+              class="more-button"
+              data-modal-target="modal-sarah"
+            >
+              En savoir plus
+            </button>
+          </div>
+        </article>
       </div>
     </div>
-  </div>
-  <div class="nearby-cabinet">
-    <h2 class="semi-bold">À Ploëmel</h2>
-    <p>4 rue de la Gare, 56400 Ploëmel</p>
-    <div class="presence-block" aria-label="Jours de présence à Ploëmel">
-      <p class="presence-label">Présence</p>
-      <ul class="presence-days">
-        <li>Vendredi</li>
-        <li>Samedi</li>
-      </ul>
-    </div>
-  </div>
-  <h1 class="phone semi-bold">07 81 32 23 99</h1>
-</section>
+  </section>
 
-{% include moebius.html %}
+  {% include moebius.html %}
 
-<section id="etiomedecine">
-  <h1 class="title semi-bold">L’étiomédecine, qu’est-ce que c’est&#8239;?</h1>
-  <picture>
-    <source media="(min-width: 576px)" srcset="./assets/images/pouls.png">
-    <img src="./assets/images/pouls.png" alt="Prise de pouls en étiomédecine" />
-  </picture>
-  <div class="text-body prose">
-    <p>
-      L’étiomédecine est une méthode thérapeutique visant à soulager les
-      <strong>mémoires de souffrance</strong>, innées ou acquises, à travers lesquelles
-      les individus appréhendent la vie. Ces mémoires agissent comme des
-      <strong>filtres</strong> qui distordent notre regard sur l’existence. Le soin
-      contribue à «&#8239;<strong>décloisonner</strong>&#8239;» le patient, qui retrouve alors
-      davantage de <strong>liberté</strong> pour aborder la vie avec plus de justesse
-      et, potentiellement, se trouver.
-    </p>
-    <p>
-      Le soin en étiomédecine ne repose ni sur un protocole standardisé ni sur des
-      conseils. Il consiste à accueillir, sans jugement, le vécu
-      <strong>singulier</strong> de chaque patient. Le praticien l'accompagne à
-      recontacter les ressentis physiques et émotionnels liés à son histoire afin de
-      libérer les mémoires concernées, en s'appuyant notamment sur les réactions du
-      pouls.
-    </p>
-    <p>
-      C'est le <strong>partage</strong> du ressenti, rendu possible par la présence
-      empathique du thérapeute, qui permet la libération de la charge de souffrance.
-      Les symptômes, physiques comme psychiques, ainsi que les fonctionnements qui en
-      découlent, peuvent alors progressivement se <strong>dissiper</strong>. La
-      souffrance ne se résout pas par l'explication, mais par le partage du ressenti.
-    </p>
-    <p>Nous sentir reconnus nous libère profondément et durablement.</p>
-    <p>
-      Pour en savoir plus sur l’étio, son
-      <strong>fonctionnement</strong> ou son <strong>champ d’action</strong>, voir
-      <a class="text-link"
-        href="https://www.etiomed.com/2026/06/10/letiomedecine-definition-champs-dapplication-et-limites/"
-        target="_blank" rel="noopener noreferrer">cet article.</a>
-    </p>
-  </div>
-</section>
-
-{% include moebius.html %}
-
-<section id='parcours'>
-  <h1 class="title semi-bold">Mon parcours</h1>
-  <img src="./assets/images/david_jegou.webp" alt="David Jegou, praticien en Étiomédecine" width="301"
-    height="401">
-  <div class="text-body prose">
-    <p>
-      Ostéopathe de formation, je n’ai jamais été pleinement satisfait des concepts
-      mécanistes enseignés, ils me semblaient décrire le fonctionnement du corps sans
-      réellement rendre compte de la complexité de l'être humain. Très tôt, j’ai
-      ressenti le besoin d’explorer autrement, par le ressenti, en m’affranchissant des
-      cadres et des manuels. Un premier déclic survient lors d’une mission humanitaire
-      en Amérique latine. Confronté à des vécus lourds, je prends alors la mesure de mes
-      limites et du manque d’outils adaptés. Une brèche s’ouvre, je m’y engouffre.
-    </p>
-    <p>
-      C’est à mon retour que je découvre l’étiomédecine, en cherchant à résoudre des
-      problèmes de santé récurrents. D’abord déstabilisé, je vois peu à peu les verrous,
-      tant physiques que psychoaffectifs, céder. Comme une percée de lumière dans un
-      ciel d’orage&#8239;: j’avais trouvé.
-    </p>
-    <p>
-      N'ayant jamais su nier les évidences, je me forme dès 2009 auprès de Max
-      Bernardeau. Très vite, une décision s'impose&#8239;: l'étiomédecine deviendra l'unique
-      outil de ma pratique en cabinet.
-    </p>
-    <p>
-      Pendant quinze ans, je l'accompagne comme assistant au sein de ses formations. À
-      son départ à la retraite, il me transmet le relais afin d'assurer la continuité de
-      cet enseignement. J'exerce aujourd'hui comme praticien certifié et formateur en
-      étiomédecine et j’espère pouvoir humblement redonner ce qui m’a été transmis.
-    </p>
-  </div>
-  <h1 class="title semi-bold black margin-top">Ma formation</h1>
-  <div class="diploma">
-    <p class="semi-bold">DIPLÔMÉ OSTÉOPATHE DO en 2008</p>
-    <p>à IDHEO NANTES</p>
-  </div>
-  <div class="diploma">
-    <p class="semi-bold">OSTÉOPATHIE BIODYNAMIQUE</p>
-    <p>avec B. JOSSE</p>
-  </div>
-  <div class="diploma">
-    <p class="semi-bold">OSTÉOPATHIE TISSULAIRE</p>
-    <p>avec P. TRICOT</p>
-  </div>
-  <div class="diploma">
-    <p class="semi-bold">PHYSIOLOGIE ÉVOLUTIONNISTE</p>
-    <p>avec M. GIRARDIN</p>
-  </div>
-  <div class="diploma">
-    <p class="semi-bold">ÉTIOMÉDECINE en 2009</p>
-    <p>avec M. BERNARDEAU</p>
-  </div>
-</section>
-
-{% include moebius.html %}
-
-<section id="infos">
-  <h1 class="title semi-bold">Infos pratiques</h1>
-  <div class="addresses">
-    <div class="address">
-      <h2 class="semi-bold">Cabinet de Nantes / Orvault</h2>
-      <div class="address-details">
-        <p>6 Rue des Ajoncs d'Or, 44700 Orvault</p>
-        <div class="presence-block" aria-label="Jours de présence à Nantes / Orvault">
-          <p class="presence-label">Présence</p>
-          <ul class="presence-days">
-            <li>Mercredi</li>
-            <li>Jeudi</li>
-            <li>Samedi</li>
-          </ul>
-        </div>
+  <section id="cabinets" class="content-section cabinets-section">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h1 class="title semi-bold">Les cabinets</h1>
       </div>
-      <iframe title="Cabinet d'étiomédecine de David Jegou à Nantes"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10834.154939099093!2d-1.596505!3d47.2451678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec2f677a0d3b%3A0x93d29d7c2e003fca!2sCabinet%20d&#39;%C3%A9tiom%C3%A9decine%20de%20David%20Jegou%20(Ost%C3%A9opathe%20D.O)!5e0!3m2!1sfr!2sfr!4v1700752457603!5m2!1sfr!2sfr"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="address">
-      <h2 class="semi-bold">Cabinet de Crac'h</h2>
-      <div class="address-details">
-        <p>1 rue Germaine Tillion, 56950 Crac'h</p>
-        <div class="presence-block" aria-label="Jours de présence à Crac'h">
-          <p class="presence-label">Présence</p>
-          <ul class="presence-days">
-            <li>Lundi</li>
-            <li>Mardi</li>
-            <li>Mercredi</li>
-          </ul>
-        </div>
-      </div>
-      <iframe title="Carte de l'adresse du cabinet de David Jegou à Crac'h"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.60979486079!2d-2.9969218!3d47.6142766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481013af18929417%3A0x9365e7040444da74!2s1%20Rue%20Germaine%20Tillion%2C%2056950%20Crach!5e0!3m2!1sfr!2sfr!4v1785358628130!5m2!1sfr!2sfr"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    </div>
-    <div class="address">
-      <h2 class="semi-bold">Cabinet de Ploëmel</h2>
-      <div class="address-details">
-        <p>4 rue de la Gare, 56400 Ploëmel</p>
-        <div class="presence-block" aria-label="Jours de présence à Ploëmel">
-          <p class="presence-label">Présence</p>
-          <ul class="presence-days">
-            <li>Vendredi</li>
-            <li>Samedi</li>
-          </ul>
-        </div>
-      </div>
-      <iframe title="Carte de l'adresse du cabinet de David Jegou à Ploëmel"
-        src="https://www.google.com/maps?q=4%20rue%20de%20la%20Gare%2C%2056400%20Ploemel&output=embed"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    </div>
-  </div>
-  <div class="texts">
-    <h2 class="phone semi-bold">07 81 32 23 99</h2>
-    <p>davidjegou.etio@gmail.com</p>
-    <p>Tarif des consultations&#8239;: 75&#8239;€.</p>
-  </div>
-</section>
 
-{% include moebius.html %}
+      <div class="cabinet-grid">
+        <article class="cabinet-card">
+          <img
+            src="./assets/images/optimized/nantes-960.webp"
+            srcset="./assets/images/optimized/nantes-480.webp 480w, ./assets/images/optimized/nantes-960.webp 960w, ./assets/images/optimized/nantes-1448.webp 1448w"
+            sizes="(max-width: 700px) calc(100vw - 38px), (max-width: 980px) calc(100vw - 50px), (max-width: 1328px) calc((100vw - 100px) / 3), 410px"
+            loading="lazy"
+            decoding="async"
+            alt="Cabinet d'étiomédecine à Nantes / Orvault"
+            width="1448"
+            height="1086"
+          />
+          <div class="cabinet-content">
+            <h2 class="semi-bold">Nantes / Orvault</h2>
+            <p>6 Rue des Ajoncs d'Or, 44700 Orvault</p>
+            <p class="sr-only">Jours de présence : mercredi, jeudi et samedi.</p>
+            <ul class="week-days" aria-hidden="true">
+              <li>Lun</li>
+              <li>Mar</li>
+              <li class="is-active">Mer</li>
+              <li class="is-active">Jeu</li>
+              <li>Ven</li>
+              <li class="is-active">Sam</li>
+            </ul>
+          </div>
+          <iframe
+            title="Cabinet d'étiomédecine à Nantes / Orvault"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10834.154939099093!2d-1.596505!3d47.2451678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec2f677a0d3b%3A0x93d29d7c2e003fca!2sCabinet%20d&#39;%C3%A9tiom%C3%A9decine%20de%20David%20Jegou%20(Ost%C3%A9opathe%20D.O)!5e0!3m2!1sfr!2sfr!4v1700752457603!5m2!1sfr!2sfr"
+            width="520"
+            height="260"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
 
-<section>
-  <h1 class="title semi-bold">Liens</h1>
-  <ul class="links">
-    <li>
-      <a href="https://www.etiomed.com/" target="_blank" rel="noopener noreferrer">
-        etiomed.com
-      </a>
-      <p>
-        Site de la formation en étiomédecine
-      </p>
-    </li>
-    <li>
-      <a href="https://annuaire-etiomedecine.fr/" target="_blank" rel="noopener noreferrer">
-        Annuaire étiomédecine
-      </a>
-      <p>
-        Site de référencement des praticiens certifiés
-      </p>
-    </li>
-  </ul>
-</section>
+        <article class="cabinet-card">
+          <img
+            src="./assets/images/optimized/crach-960.webp"
+            srcset="./assets/images/optimized/crach-480.webp 480w, ./assets/images/optimized/crach-960.webp 960w, ./assets/images/optimized/crach-1448.webp 1448w"
+            sizes="(max-width: 700px) calc(100vw - 38px), (max-width: 980px) calc(100vw - 50px), (max-width: 1328px) calc((100vw - 100px) / 3), 410px"
+            loading="lazy"
+            decoding="async"
+            alt="Cabinet d'étiomédecine à Crac'h"
+            width="1448"
+            height="1086"
+          />
+          <div class="cabinet-content">
+            <h2 class="semi-bold">Crac'h</h2>
+            <p>1 rue Germaine Tillion, 56950 Crac'h</p>
+            <p class="sr-only">Jours de présence : lundi, mardi et mercredi.</p>
+            <ul class="week-days" aria-hidden="true">
+              <li class="is-active">Lun</li>
+              <li class="is-active">Mar</li>
+              <li class="is-active">Mer</li>
+              <li>Jeu</li>
+              <li>Ven</li>
+              <li>Sam</li>
+            </ul>
+          </div>
+          <iframe
+            title="Cabinet d'étiomédecine à Crac'h"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.60979486079!2d-2.9969218!3d47.6142766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481013af18929417%3A0x9365e7040444da74!2s1%20Rue%20Germaine%20Tillion%2C%2056950%20Crach!5e0!3m2!1sfr!2sfr!4v1785358628130!5m2!1sfr!2sfr"
+            width="520"
+            height="260"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </article>
+
+        <article class="cabinet-card">
+          <img
+            src="./assets/images/optimized/ploemel-1280.webp"
+            srcset="./assets/images/optimized/ploemel-640.webp 640w, ./assets/images/optimized/ploemel-1280.webp 1280w, ./assets/images/optimized/ploemel-1870.webp 1870w"
+            sizes="(max-width: 700px) calc((100vw - 38px) * 1.67), (max-width: 980px) calc((100vw - 50px) * 1.67), (max-width: 1328px) calc((100vw - 100px) * 0.557), 685px"
+            loading="lazy"
+            decoding="async"
+            alt="Cabinet d’étiomédecine de Ploemel"
+            width="1870"
+            height="841"
+          />
+          <div class="cabinet-content">
+            <h2 class="semi-bold">Ploemel</h2>
+            <p>4 rue de la Gare, 56400 Ploemel</p>
+            <p class="sr-only">Jours de présence : vendredi et samedi.</p>
+            <ul class="week-days" aria-hidden="true">
+              <li>Lun</li>
+              <li>Mar</li>
+              <li>Mer</li>
+              <li>Jeu</li>
+              <li class="is-active">Ven</li>
+              <li class="is-active">Sam</li>
+            </ul>
+          </div>
+          <iframe
+            title="Cabinet d'étiomédecine à Ploemel"
+            src="https://www.google.com/maps?q=4%20rue%20de%20la%20Gare%2C%2056400%20Ploemel&output=embed"
+            width="520"
+            height="260"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  {% include moebius.html %}
+
+  <section id="prendre-rdv" class="content-section appointment-section">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h1 class="title semi-bold">Prendre rendez-vous</h1>
+      </div>
+
+      <div class="appointment-grid">
+        <article class="appointment-card">
+          <p class="eyebrow">David Jegou</p>
+          <a class="phone-link semi-bold" href="tel:+33781322399"
+            >07 81 32 23 99</a
+          >
+        </article>
+
+        <article class="appointment-card">
+          <p class="eyebrow">Sarah Ziane</p>
+          <a class="phone-link semi-bold" href="tel:+33781622199"
+            >07 81 62 21 99</a
+          >
+        </article>
+      </div>
+    </div>
+  </section>
 </main>
+
+<div class="modal-backdrop" id="modal-david" hidden>
+  <article
+    class="therapist-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-david-title"
+  >
+    <button
+      type="button"
+      class="modal-close"
+      data-modal-close
+      aria-label="Fermer"
+    >
+      ×
+    </button>
+    <div class="modal-content">
+      <figure class="modal-portrait">
+        <img
+          src="./assets/images/optimized/david-800.webp"
+          srcset="./assets/images/optimized/david-400.webp 400w, ./assets/images/optimized/david-800.webp 800w, ./assets/images/optimized/david-1122.webp 1122w"
+          sizes="(max-width: 700px) 260px, 270px"
+          loading="lazy"
+          decoding="async"
+          alt="Portrait de David Jegou"
+          width="1122"
+          height="1402"
+        />
+      </figure>
+      <p class="eyebrow">Praticien certifié et formateur</p>
+      <h2 class="semi-bold" id="modal-david-title">David Jegou</h2>
+      <div class="prose">
+        <p>
+          Ostéopathe de formation, je n’ai jamais été pleinement satisfait des
+          concepts mécanistes enseignés, ils me semblaient décrire le
+          fonctionnement du corps sans réellement rendre compte de la complexité
+          de l'être humain. Très tôt, j’ai ressenti le besoin d’explorer
+          autrement, par le ressenti, en m’affranchissant des cadres et des
+          manuels. Un premier déclic survient lors d’une mission humanitaire en
+          Amérique latine. Confronté à des vécus lourds, je prends alors la
+          mesure de mes limites et du manque d’outils adaptés. Une brèche
+          s’ouvre, je m’y engouffre.
+        </p>
+        <p>
+          C’est à mon retour que je découvre l’étiomédecine, en cherchant à
+          résoudre des problèmes de santé récurrents. D’abord déstabilisé, je
+          vois peu à peu les verrous, tant physiques que psychoaffectifs, céder.
+          Comme une percée de lumière dans un ciel d’orage&#8239;: j’avais
+          trouvé.
+        </p>
+        <p>
+          N'ayant jamais su nier les évidences, je me forme dès 2009 auprès de
+          Max Bernardeau. Très vite, une décision s'impose&#8239;:
+          l'étiomédecine deviendra l'unique outil de ma pratique en cabinet.
+        </p>
+        <p>
+          Pendant quinze ans, je l'accompagne comme assistant au sein de ses
+          formations. À son départ à la retraite, il me transmet le relais afin
+          d'assurer la continuité de cet enseignement. J'exerce aujourd'hui
+          comme praticien certifié et formateur en étiomédecine.
+        </p>
+      </div>
+      <dl class="modal-meta">
+        <div>
+          <dt>Téléphone</dt>
+          <dd><a href="tel:+33781322399">07 81 32 23 99</a></dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd>
+            <a href="mailto:davidjegou.etio@gmail.com"
+              >davidjegou.etio@gmail.com</a
+            >
+          </dd>
+        </div>
+        <div>
+          <dt>Tarif</dt>
+          <dd>75&#8239;€</dd>
+        </div>
+      </dl>
+    </div>
+  </article>
+</div>
+
+<div class="modal-backdrop" id="modal-sarah" hidden>
+  <article
+    class="therapist-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-sarah-title"
+  >
+    <button
+      type="button"
+      class="modal-close"
+      data-modal-close
+      aria-label="Fermer"
+    >
+      ×
+    </button>
+    <div class="modal-content">
+      <figure class="modal-portrait">
+        <img
+          src="./assets/images/optimized/sarah-756.webp"
+          srcset="./assets/images/optimized/sarah-400.webp 400w, ./assets/images/optimized/sarah-756.webp 756w"
+          sizes="(max-width: 700px) 260px, 270px"
+          loading="lazy"
+          decoding="async"
+          alt="Portrait de Sarah Ziane"
+          width="756"
+          height="880"
+        />
+      </figure>
+      <p class="eyebrow">Praticienne certifiée</p>
+      <h2 class="semi-bold" id="modal-sarah-title">Sarah Ziane</h2>
+      <div class="prose">
+        <p>
+          J’ai découvert l’étiomédecine en tant que patiente&#8239;: outre les
+          nettes améliorations de mon état physique, j’ai pu me libérer de
+          fonctionnements récurrents dans lesquels j’étais enfermée depuis
+          longtemps et ainsi retrouver ma joie de vivre.
+        </p>
+        <p>
+          Ces bénéfices combinés à ma curiosité naturelle envers l’humain et son
+          fonctionnement ont éveillé en moi un élan, une envie d’explorer cette
+          méthode&#8239;: j’ai donc pris la décision de m'y former auprès de Max
+          Bernardeau en 2022.
+        </p>
+        <p>
+          Je découvrai alors une approche intelligente, pragmatique, prenant en
+          compte l’humain dans ce qu’il est. J’ai eu la sensation que cet outil
+          me permettait de réaliser enfin un potentiel en moi qui n’attendait
+          que de s’exprimer.
+        </p>
+        <p>
+          À cette période, je traversais également une perte de sens progressive
+          dans mon travail. Enseignante au lycée, j’aimais accompagner les
+          élèves et leur transmettre mon intérêt pour la littérature et la
+          philosophie que j’avais étudiées, mais je me sentais démunie face aux
+          souffrances que certains rencontraient et limitée par le cadre de
+          l’institution.
+        </p>
+        <p>
+          Ainsi, la décision de devenir praticienne en étiomédecine a fini par
+          s’imposer comme une évidence. J’ai continué à me former et à pratiquer
+          en parallèle de mon travail puis j’ai obtenu ma certification, avant
+          de franchir le pas et de me consacrer pleinement à l’accompagnement
+          thérapeutique via ce formidable outil.
+        </p>
+      </div>
+      <dl class="modal-meta">
+        <div>
+          <dt>Téléphone</dt>
+          <dd><a href="tel:+33781622199">07 81 62 21 99</a></dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd>
+            <a href="mailto:sarah.ziane.etio@gmail.com"
+              >sarah.ziane.etio@gmail.com</a
+            >
+          </dd>
+        </div>
+        <div>
+          <dt>Tarif</dt>
+          <dd>65&#8239;€</dd>
+        </div>
+      </dl>
+    </div>
+  </article>
+</div>

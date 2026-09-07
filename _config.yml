@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: David Jegou | Étiomédecine en Bretagne
+title: Étiomédecine en Bretagne | David Jegou & Sarah Ziane
 description: >- # this means to ignore newlines until "baseurl:"
-  David Jegou est praticien en étiomédecine. Il reçoit dans ses cabinets à Orvault,
-  Crac'h et Ploëmel.
+  David Jegou et Sarah Ziane sont praticiens en étiomédecine. Ils reçoivent
+  dans leurs cabinets à Orvault, Crac'h et Ploemel.
 url: https://etiomedecine-bretagne.fr
 production_url: https://etiomedecine-bretagne.fr
-logo: ./assets/images/moebius-ribbon.webp
+logo: https://etiomedecine-bretagne.fr/assets/images/optimized/moebius-288.webp
 
 # Build settings
 plugins:
@@ -49,3 +49,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Image generation is a local maintenance task.
+exclude:
+  - scripts/

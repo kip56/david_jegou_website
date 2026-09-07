@@ -1,6 +1,8 @@
 - name: L'Étiomédecine
-  url: '/#etiomedecine'
-- name: "Qui suis-je&#8239;?"
-  url: '/#parcours'
-- name: Infos pratiques
-  url: '/#infos'
+  url: "/#etiomedecine"
+- name: Thérapeutes
+  url: "/#therapeutes"
+- name: Cabinets
+  url: "/#cabinets"
+- name: Prendre RDV
+  url: "/#prendre-rdv"

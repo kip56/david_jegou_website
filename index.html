@@ -6,9 +6,13 @@ layout: default
 <main>
   <section class="hero-pulse" aria-label="Accueil">
     <picture>
-      <source media="(min-width: 768px)" srcset="./assets/images/pouls.png" />
       <img
-        src="./assets/images/pouls.png"
+        src="./assets/images/optimized/pouls-1120.webp"
+        srcset="./assets/images/optimized/pouls-720.webp 720w, ./assets/images/optimized/pouls-1120.webp 1120w, ./assets/images/optimized/pouls-1600.webp 1600w, ./assets/images/optimized/pouls-2200.webp 2200w"
+        sizes="(max-width: 700px) 710px, (max-width: 1120px) 1120px, 100vw"
+        width="2200"
+        height="1336"
+        fetchpriority="high"
         alt="Prise de pouls pendant une séance d'étiomédecine"
       />
     </picture>
@@ -80,10 +84,14 @@ layout: default
         <article class="therapist-card">
           <div class="therapist-photo therapist-photo--david">
             <img
-              src="./assets/images/david_hd.png"
+              src="./assets/images/optimized/david-800.webp"
+              srcset="./assets/images/optimized/david-400.webp 400w, ./assets/images/optimized/david-800.webp 800w, ./assets/images/optimized/david-1122.webp 1122w"
+              sizes="(max-width: 700px) calc(100vw - 36px), (max-width: 980px) 42vw, 480px"
+              loading="lazy"
+              decoding="async"
               alt="Portrait de David Jegou, praticien en étiomédecine"
-              width="360"
-              height="460"
+              width="1122"
+              height="1402"
             />
           </div>
           <div class="therapist-content">
@@ -126,10 +134,14 @@ layout: default
         <article class="therapist-card">
           <div class="therapist-photo">
             <img
-              src="./assets/images/sarah_hd.png"
+              src="./assets/images/optimized/sarah-756.webp"
+              srcset="./assets/images/optimized/sarah-400.webp 400w, ./assets/images/optimized/sarah-756.webp 756w"
+              sizes="(max-width: 700px) calc(100vw - 36px), (max-width: 980px) 42vw, 480px"
+              loading="lazy"
+              decoding="async"
               alt="Portrait de Sarah Ziane, praticienne en étiomédecine"
-              width="360"
-              height="460"
+              width="756"
+              height="880"
             />
           </div>
           <div class="therapist-content">
@@ -183,10 +195,14 @@ layout: default
       <div class="cabinet-grid">
         <article class="cabinet-card">
           <img
-            src="./assets/images/nantes_hd.png"
+            src="./assets/images/optimized/nantes-960.webp"
+            srcset="./assets/images/optimized/nantes-480.webp 480w, ./assets/images/optimized/nantes-960.webp 960w, ./assets/images/optimized/nantes-1448.webp 1448w"
+            sizes="(max-width: 700px) calc(100vw - 38px), (max-width: 980px) calc(100vw - 50px), (max-width: 1328px) calc((100vw - 100px) / 3), 410px"
+            loading="lazy"
+            decoding="async"
             alt="Cabinet d'étiomédecine à Nantes / Orvault"
-            width="520"
-            height="348"
+            width="1448"
+            height="1086"
           />
           <div class="cabinet-content">
             <h2 class="semi-bold">Nantes / Orvault</h2>
@@ -217,10 +233,14 @@ layout: default
 
         <article class="cabinet-card">
           <img
-            src="./assets/images/crac'h_hd.png"
+            src="./assets/images/optimized/crach-960.webp"
+            srcset="./assets/images/optimized/crach-480.webp 480w, ./assets/images/optimized/crach-960.webp 960w, ./assets/images/optimized/crach-1448.webp 1448w"
+            sizes="(max-width: 700px) calc(100vw - 38px), (max-width: 980px) calc(100vw - 50px), (max-width: 1328px) calc((100vw - 100px) / 3), 410px"
+            loading="lazy"
+            decoding="async"
             alt="Cabinet d'étiomédecine à Crac'h"
-            width="520"
-            height="348"
+            width="1448"
+            height="1086"
           />
           <div class="cabinet-content">
             <h2 class="semi-bold">Crac'h</h2>
@@ -248,7 +268,11 @@ layout: default
 
         <article class="cabinet-card">
           <img
-            src="./assets/images/ploemel_hd.png"
+            src="./assets/images/optimized/ploemel-1280.webp"
+            srcset="./assets/images/optimized/ploemel-640.webp 640w, ./assets/images/optimized/ploemel-1280.webp 1280w, ./assets/images/optimized/ploemel-1870.webp 1870w"
+            sizes="(max-width: 700px) calc((100vw - 38px) * 1.67), (max-width: 980px) calc((100vw - 50px) * 1.67), (max-width: 1328px) calc((100vw - 100px) * 0.557), 685px"
+            loading="lazy"
+            decoding="async"
             alt="Cabinet d’étiomédecine de Ploemel"
             width="1870"
             height="841"
@@ -325,10 +349,14 @@ layout: default
     <div class="modal-content">
       <figure class="modal-portrait">
         <img
-          src="./assets/images/david_hd.png"
+          src="./assets/images/optimized/david-800.webp"
+          srcset="./assets/images/optimized/david-400.webp 400w, ./assets/images/optimized/david-800.webp 800w, ./assets/images/optimized/david-1122.webp 1122w"
+          sizes="(max-width: 700px) 260px, 270px"
+          loading="lazy"
+          decoding="async"
           alt="Portrait de David Jegou"
-          width="360"
-          height="460"
+          width="1122"
+          height="1402"
         />
       </figure>
       <p class="eyebrow">Praticien certifié et formateur</p>
@@ -404,10 +432,14 @@ layout: default
     <div class="modal-content">
       <figure class="modal-portrait">
         <img
-          src="./assets/images/sarah_hd.png"
+          src="./assets/images/optimized/sarah-756.webp"
+          srcset="./assets/images/optimized/sarah-400.webp 400w, ./assets/images/optimized/sarah-756.webp 756w"
+          sizes="(max-width: 700px) 260px, 270px"
+          loading="lazy"
+          decoding="async"
           alt="Portrait de Sarah Ziane"
-          width="360"
-          height="460"
+          width="756"
+          height="880"
         />
       </figure>
       <p class="eyebrow">Praticienne certifiée</p>

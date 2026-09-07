@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   dans leurs cabinets à Orvault, Crac'h et Ploemel.
 url: https://etiomedecine-bretagne.fr
 production_url: https://etiomedecine-bretagne.fr
-logo: ./assets/images/moebius_transparent.png
+logo: https://etiomedecine-bretagne.fr/assets/images/optimized/moebius-288.webp
 
 # Build settings
 plugins:
@@ -49,3 +49,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Image generation is a local maintenance task.
+exclude:
+  - scripts/
